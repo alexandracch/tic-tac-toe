@@ -43,3 +43,9 @@
       font-size: 25px;
       font-family: 'Pacifico', cursive;
   }
+
+  button:hover {
+    padding: 12px 17px;
+    background: white;
+    color: black;
+  }
