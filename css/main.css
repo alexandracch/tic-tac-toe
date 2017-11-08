@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ body {
+     background-image: url(../assets/img/arcoiris.jpg);
+     text-align: center;
+ }
+ h1 {
+   background: black;
+   color: white;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 30px;
+   padding: 15px;
+   margin-top: 30px;
+ }
+  .board {
+    text-align: center;
+    margin: 100px auto 0;
+    border-collapse: collapse;
+  }
+
+  .board td {
+    background: white;
+    width: 120px;
+    height: 120px;
+    border: 3px solid black;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: curvise;
+  }
+
+  button {
+      background: black;
+      color: white;
+      border-radius: 6px;
+      display: inline-block;
+      border-style: none;
+      margin-top: 20px;
+      padding: 10px 15px;
+      font-size: 25px;
+      font-family: 'Pacifico', cursive;
+  }
