@@ -7,7 +7,7 @@
 
  body {
      margin-top: 0;
-     background-image: url(../assets/img/gradient2.jpg);
+     background-image: url(../assets/img/galaxy1.gif);
      text-align: center;
      background-repeat: no-repeat;
      background-position: center center;
@@ -30,7 +30,6 @@
 
   .board td {
     background: white;
-    opacity: .2;
     width: 120px;
     height: 120px;
     text-align: center;
