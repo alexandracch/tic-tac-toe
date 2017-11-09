@@ -6,6 +6,7 @@ var arrayTictactoe = new Array(9);//combinaciones ganadoras
 var grids = document.getElementsByClassName("tictactoe");
 
 //DECLARACIÓN DE FUNCIONES
+/*Funcion que carga todas mis funciones*/
 function documentLoad () 
 { var n = 0;
   while(n<grids.length)
@@ -73,6 +74,7 @@ function tictactoe (event)
     turn++;
   }
 }
+
 //EVENTOS
 window.addEventListener("load",documentLoad);
 
