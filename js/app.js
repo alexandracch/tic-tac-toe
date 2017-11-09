@@ -6,6 +6,15 @@ var arrayTictactoe = new Array(9);//combinaciones ganadoras
 var grids = document.getElementsByClassName("tictactoe");
 
 //DECLARACIÓN DE FUNCIONES
+function documentLoad () 
+{ var n = 0;
+  while(n<grids.length)
+  {
+   grids[n].addEventListener("click",tictactoe);
+   n++; 
+  }
+
+}
 
 function winner(letter)
 {
@@ -22,7 +31,7 @@ function winner(letter)
   ) 
   {
    alert("PLAYER "+ letter +" WINS");
-   window.location.reload();
+   /*window.location.reload();*/
   }
 }
 
@@ -57,34 +66,18 @@ function tictactoe (event)
     alert("Tie Game :(");
     alert.style.background = "#4d3363";
     alert.style.color= "#000";
-    window.location.reload();
+    
   }
   else 
   {
     turn++;
   }
 }
-
-function documentLoad () 
-{
- /* document.getElementsByClassName("tictactoe").addEventListener("click",tictactoe);*/
- //No puedo asignarle el evento click a un conjunto de eventos
- //llamo a cada objeto para asignarle el evento
- /*document.getElementsByClassName("tictactoe")[4].addEventListener("click",tictactoe);*/
-  //para no dar copypaste utilizo ciclos
-  
-  var n = 0;
-  while(n<grids.length)
-  {
-   grids[n].addEventListener("click",tictactoe);
-   n++;
-  }
-}
-
-
 //EVENTOS
-
 window.addEventListener("load",documentLoad);
 
-var btn = document.getElementsByClassName('btn');
-//window.location.reload();("click",btn);
+function reset () {
+  window.location.reload();
+}
+
+document.getElementById("btn").addEventListener("click",reset);
