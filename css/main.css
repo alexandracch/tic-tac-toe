@@ -3,9 +3,15 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+
  body {
-     background-image: url(../assets/img/arcoiris.jpg);
+     margin-top: 0;
+     background-image: url(../assets/img/gradient2.jpg);
      text-align: center;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
  }
  h1 {
    background: black;
@@ -15,21 +21,25 @@
    padding: 15px;
    margin-top: 30px;
  }
+
   .board {
     text-align: center;
     margin: 100px auto 0;
-    border-collapse: collapse;
+    /*border-collapse: collapse;*/
   }
 
   .board td {
     background: white;
+    opacity: .2;
     width: 120px;
     height: 120px;
-    border: 3px solid black;
     text-align: center;
     font-size: 50px;
     font-weight: bold;
     font-family: curvise;
+    border-radius: 20px;
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
   }
 
   button {
