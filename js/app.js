@@ -55,6 +55,8 @@ function tictactoe (event)
   if(turn==9)
   {
     alert("Tie Game :(");
+    alert.style.background = "#4d3363";
+    alert.style.color= "#000";
     window.location.reload();
   }
   else 
